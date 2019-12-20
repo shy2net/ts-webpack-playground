@@ -18,6 +18,10 @@ const main = () => {
 
 const zoneSpec: ZoneSpec = {
   name: 'mainZone',
+  onInvoke: (parent, current, target, task) => {
+    console.log('Invoking =>', task.name);
+    return parent.invoke(target, task);
+  },
   onScheduleTask: (parent, current, target, task) => {
     console.log('Scheduled ' + task.source + ' => ' + task.data.handleId);
     return parent.scheduleTask(target, task);
