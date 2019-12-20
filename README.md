@@ -1,12 +1,14 @@
 ## Typescript-webpack-playground
 
-This playground allows you to easily set up a simple typescript\webpack project to set test your projects in.
+This playground allows you to easily set up a simple typescript\webpack project to set test your projects in. This can also be used as a starter template for your typescript\webpack based projects.
 
 ### Running this playground
 
 Simply run the following commands:
-1. npm install
-2. npm run start:dev
+```bash
+npm install
+npm run start:dev
+```
 
 
 ### Building options
