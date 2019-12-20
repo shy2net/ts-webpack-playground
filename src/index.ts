@@ -7,6 +7,10 @@ const main = () => {
   console.log('Starting setTimeout');
   setTimeout(() => {
     console.log('Finished something!');
+
+    setTimeout(() => {
+      console.log('Just finished');
+    }, 3000);
   }, 2000);
 
   console.log('After setTimeout');
